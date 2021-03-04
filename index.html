@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cognomi</title>
+</head>
+<body>
+    <script>
+        var surnames = ["Bianchi", "Rossi", "Perlari", "Lodigiani", "Mastrobattista", "Verdi"];
+        var surname = prompt("Inserisci il tuo cognome");
+
+        surnames.push(surname);
+        surnames.sort();
+
+        for (var i = 0; i < surnames.length; i++) {
+            console.log(surnames[i]);
+        }
+
+        console.log("Il tuo cognome " + surname + " è " + parseInt(surnames.indexOf(surname)+ 1));
+    </script>
+</body>
+</html>
