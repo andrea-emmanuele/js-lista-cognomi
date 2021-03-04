@@ -9,6 +9,8 @@
         var surnames = ["Bianchi", "Rossi", "Perlari", "Lodigiani", "Mastrobattista", "Verdi"];
         var surname = prompt("Inserisci il tuo cognome");
 
+        surname = surname[0].toUpperCase() + surname.substring(1); /* makes first letter capitalized */
+
         surnames.push(surname);
         surnames.sort();
 
